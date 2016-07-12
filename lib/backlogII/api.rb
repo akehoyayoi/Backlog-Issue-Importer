@@ -83,7 +83,8 @@ module BacklogII
             component:   hash[obj.components].to_s,
             version:     hash[obj.versions].to_s,
             milestone:   hash[obj.milestones].to_s,
-            priority:    hash[obj.priority].to_s
+            priority:    hash[obj.priority].to_s,
+            assignerId:  hash[obj.assigner_id].to_i
       }
       due_date = hash[obj.due_date]
       if due_date.nil?
