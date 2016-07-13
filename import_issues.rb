@@ -93,9 +93,10 @@ begin
     else
       puts 'Error: input file type is UTF-8 & SJIS only.'
       exit
-  end
+    end
 rescue => e
-  puts "Error #{e.faultCode}: #{e.faultString}"
+  puts "Error #{e}"
+  exit
 end
 
 
